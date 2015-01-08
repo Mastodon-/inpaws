@@ -65,6 +65,7 @@ namespace Inpaws
                                                     TFrecuencia* calcularFrecuencias = NULL);
             static void incluirFrecuencias (const TFrecuencia& calculada, TFrecuencia* frecuencias);
             static void sumarFrecuencia (const std::string& cadena, TFrecuencia& frecuencias);
+            virtual ~PrepAbreviable() {}
     };
 }
 

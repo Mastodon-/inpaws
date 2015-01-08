@@ -239,7 +239,7 @@ PrepProcesos::_leerVerboNombre (PrepEntradaMultiple& entrada, PrepTokeniser& tok
     // Lee la pareja verbo-nombre de cada entrada de un proceso
     // Contempla sinónimos en la forma "MONTA COCHE|ENTRA COCHE: xxxx"
     string verbo, nombre, archivoVerbo, archivoNombre;
-    unsigned long lineaVerbo, lineaNombre;
+    unsigned long lineaVerbo = 0, lineaNombre = 0;
     PrepTokeniser::TTokenType token;
     do
     {

@@ -136,7 +136,7 @@ Condacto::generarCodigo (std::ostream& os, const CondactData& dato,
                 os << "*";
             else
             {
-                const Vocabulario::Palabra* palabra;
+                const Vocabulario::Palabra* palabra = NULL;
                 if (condacto->nombre() == "ADJECT1" || condacto->nombre() == "ADJECT2")
                     palabra = vocabulario->leerPalabraInit(dato.prm1, Vocabulario::ADJECTIVE);
                 else if (condacto->nombre() == "ADVERB")

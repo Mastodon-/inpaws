@@ -307,7 +307,7 @@ Textos::generarCodigoSuperglus (std::ostream& os, uint16_t flags,
                              Diccionario::TDiccionarioInverso diccionario)
 {
     UtilTexto utilTexto;
-    int tipo;
+    int tipo = -1;
 
     if (_titulo == RSV_SYSMESSAGES)
     {
