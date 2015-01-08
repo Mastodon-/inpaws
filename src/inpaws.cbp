@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="inpaws" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\inpaws" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="cx PlanetPrueba.paw" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DMSG_ESPANOL" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\inpaws" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DMSG_ESPANOL" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Release English">
+				<Option output="bin\Release English\inpaws" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release English\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="include" />
+		</Compiler>
+		<Unit filename="Abreviaturas.cpp" />
+		<Unit filename="Aventura.cpp" />
+		<Unit filename="Caracteres.cpp" />
+		<Unit filename="Condacto.cpp" />
+		<Unit filename="Conexiones.cpp" />
+		<Unit filename="Defaults.cpp" />
+		<Unit filename="EntradaProcesos.cpp" />
+		<Unit filename="Excepcion.cpp" />
+		<Unit filename="Fichero.cpp" />
+		<Unit filename="Graficos.cpp" />
+		<Unit filename="ListaEntradasVolcadas.cpp" />
+		<Unit filename="ListaProcesos.cpp" />
+		<Unit filename="ListaSimple.cpp" />
+		<Unit filename="PawCondacts.cpp" />
+		<Unit filename="PawPart.cpp" />
+		<Unit filename="Proceso.cpp" />
+		<Unit filename="SpBuffer.cpp" />
+		<Unit filename="Textos.cpp" />
+		<Unit filename="Tokeniser.cpp" />
+		<Unit filename="UtilTexto.cpp" />
+		<Unit filename="Vocabulario.cpp" />
+		<Unit filename="include\Abreviaturas.h" />
+		<Unit filename="include\Aventura.h" />
+		<Unit filename="include\Caracteres.h" />
+		<Unit filename="include\Condacto.h" />
+		<Unit filename="include\Conexiones.h" />
+		<Unit filename="include\Defaults.h" />
+		<Unit filename="include\EntradaProcesos.h" />
+		<Unit filename="include\Excepcion.h" />
+		<Unit filename="include\Fichero.h" />
+		<Unit filename="include\Graficos.h" />
+		<Unit filename="include\ListaEntradasVolcadas.h" />
+		<Unit filename="include\ListaProcesos.h" />
+		<Unit filename="include\ListaSimple.h" />
+		<Unit filename="include\ListaSimpleImpl.h" />
+		<Unit filename="include\MsgAplicacion.h" />
+		<Unit filename="include\PawCondacts.h" />
+		<Unit filename="include\PawPart.h" />
+		<Unit filename="include\Proceso.h" />
+		<Unit filename="include\SpBuffer.h" />
+		<Unit filename="include\Textos.h" />
+		<Unit filename="include\Tokeniser.h" />
+		<Unit filename="include\UtilTexto.h" />
+		<Unit filename="include\Vocabulario.h" />
+		<Unit filename="include\defines.h" />
+		<Unit filename="include\prep\Diccionario.h" />
+		<Unit filename="include\prep\Error.h" />
+		<Unit filename="include\prep\MsgPrep.h" />
+		<Unit filename="include\prep\Pool.h" />
+		<Unit filename="include\prep\PrepAbreviable.h" />
+		<Unit filename="include\prep\PrepAbreviaturas.h" />
+		<Unit filename="include\prep\PrepConstantes.h" />
+		<Unit filename="include\prep\PrepDefaults.h" />
+		<Unit filename="include\prep\PrepEntradaMultiple.h" />
+		<Unit filename="include\prep\PrepFlags.h" />
+		<Unit filename="include\prep\PrepListaDatos.h" />
+		<Unit filename="include\prep\PrepListaMensajes.h" />
+		<Unit filename="include\prep\PrepLocalidades.h" />
+		<Unit filename="include\prep\PrepObjetos.h" />
+		<Unit filename="include\prep\PrepPart.h" />
+		<Unit filename="include\prep\PrepProcesos.h" />
+		<Unit filename="include\prep\PrepSubChar.h" />
+		<Unit filename="include\prep\PrepTokeniser.h" />
+		<Unit filename="include\prep\PrepVocabulario.h" />
+		<Unit filename="include\prep\Preprocesador.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="prep\Diccionario.cpp" />
+		<Unit filename="prep\Error.cpp" />
+		<Unit filename="prep\Pool.cpp" />
+		<Unit filename="prep\PrepAbreviable.cpp" />
+		<Unit filename="prep\PrepAbreviaturas.cpp" />
+		<Unit filename="prep\PrepConstantes.cpp" />
+		<Unit filename="prep\PrepDefaults.cpp" />
+		<Unit filename="prep\PrepEntradaMultiple.cpp" />
+		<Unit filename="prep\PrepFlags.cpp" />
+		<Unit filename="prep\PrepListaDatos.cpp" />
+		<Unit filename="prep\PrepListaMensajes.cpp" />
+		<Unit filename="prep\PrepLocalidades.cpp" />
+		<Unit filename="prep\PrepObjetos.cpp" />
+		<Unit filename="prep\PrepPart.cpp" />
+		<Unit filename="prep\PrepProcesos.cpp" />
+		<Unit filename="prep\PrepSubChar.cpp" />
+		<Unit filename="prep\PrepTokeniser.cpp" />
+		<Unit filename="prep\PrepVocabulario.cpp" />
+		<Unit filename="prep\Preprocesador.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,14 @@
+Para compilar esta distribición necesitas CodeBlocks:
+
+http://www.codeblocks.org/
+
+El fichero de proyecto "inpaws.cbp" tiene tres targets:
+
+- Debug: versión de depuración
+- Release: versión con mensajes de error en español
+- Release English: versión con mensajes de error en inglés
+
+La herramienta ha sido compilada con éxito en Windows (MinGW) y Linux_x86 (gcc)
+
+Mastodon 2009
+lane.mastodon@gmail.com
