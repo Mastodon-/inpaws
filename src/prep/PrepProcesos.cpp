@@ -340,7 +340,11 @@ PrepProcesos::_leerParametroCondacto(SpByte param, PrepEntradaMultiple::Condacto
     PrepTokeniser::TTokenType token = tokeniser.leeToken();
     bool prmLiteralMensaje = false;
 
-    if (token == PrepTokeniser::TK_LITERAL)
+    if (token == PrepTokeniser::TK_ERROR)
+    {
+        ERRORPAW(tokeniser.archivoActual(), tokeniser.lineaActual(), tokeniser.errorLeidoEsperado(MSG_PARAMETRO_CONDACTO), Error::FATAL);
+    }
+    else if (token == PrepTokeniser::TK_LITERAL)
     {
         if ((param == 1 && infoCondacto->tipo_prm1() == MESNO) ||
             (param == 2 && infoCondacto->tipo_prm2() == MESNO))
