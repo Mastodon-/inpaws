@@ -1,3 +1,12 @@
+Inpaws es una herramienta multiplataforma que a partir de un archivo
+de texto con una sintaxis propia, basada en la estructura de una
+aventura en PAWS, es capaz de generar varios formatos de archivos
+fuente para distintas versiones del Professional Adventure Writing
+System de Gilsoft.
+
+Inpaws te permite crear aventuras para el Spectrum y el CPC desde una
+definición en un archivo de texto que puedes compilar desde un PC.
+
 Para compilar esta distribición necesitas CodeBlocks:
 
 http://www.codeblocks.org/
@@ -8,7 +17,8 @@ El fichero de proyecto "inpaws.cbp" tiene tres targets:
 - Release: versión con mensajes de error en español
 - Release English: versión con mensajes de error en inglés
 
-La herramienta ha sido compilada con éxito en Windows (MinGW) y Linux_x86 (gcc)
+La herramienta ha sido compilada con éxito en Windows (MinGW) y 
+Linux_x86 (gcc)
 
-Mastodon 2009
+Mastodon 2009-2015
 lane.mastodon@gmail.com
