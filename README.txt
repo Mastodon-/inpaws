@@ -7,15 +7,13 @@ Professional Adventure Writing System for various plaforms.
 Inpaws allows you to create adventures for the ZX Spectrum and Amstrad
 CPC from a text definition you can compile in your PC
 
-You will need Codeblocks in order to compile this distribution of InPAWS:
+Nfo and docs, examples, prebuilt binaries and other stuff at:
 
-http://www.codeblocks.org/
+http://inpaws.speccy.org/indexEng.html 
 
-Project file "inpaws.cbp" has three targets:
+BUILDING
 
-- Debug: debug version (Spanish messages)
-- Release: Release version (Spanish messages)
-- Release English: Release version (English messages)
+- Extract and `make`
 
 This tool has been successful built in Windows (MinGW) and Linux_x86 (gcc)
 

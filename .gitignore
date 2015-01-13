@@ -1,4 +1,2 @@
-src/bin/
-src/obj/
-src/inpaws.layout
-src/inpaws.depend
+src/**/*.o
+inpaws

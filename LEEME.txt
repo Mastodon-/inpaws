@@ -7,15 +7,13 @@ System de Gilsoft.
 Inpaws te permite crear aventuras para el Spectrum y el CPC desde una
 definición en un archivo de texto que puedes compilar desde un PC.
 
-Para compilar esta distribición necesitas CodeBlocks:
+Info, ejemplos, documentos, versiones precompiladas y otras cosas en:
 
-http://www.codeblocks.org/
+http://inpaws.speccy.org/index.html 
 
-El fichero de proyecto "inpaws.cbp" tiene tres targets:
+COMPILACIÓN
 
-- Debug: versión de depuración
-- Release: versión con mensajes de error en español
-- Release English: versión con mensajes de error en inglés
+- Extraer y hacer `make`
 
 La herramienta ha sido compilada con éxito en Windows (MinGW) y 
 Linux_x86 (gcc)

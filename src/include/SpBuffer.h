@@ -31,6 +31,7 @@
 
 #include <iostream>
 #include <string>
+#include <stdint.h>
 
 #define SPBUFFER ::Inpaws::SpBuffer::spBuffer()
 
