@@ -1,6 +1,7 @@
 #include "prep/PrepUtilTexto.h"
 #include "prep/MsgPrep.h"
 #include <sstream>
+#include <cstdlib>
 
 using namespace Inpaws;
 using namespace std;

@@ -330,7 +330,7 @@ Vocabulario::tipoAStr(SpByte tipo)
 const std::string
 Vocabulario::quitaEspacios(const char* palabra)
 {
-    char* ptr = strchr(palabra, ' ');
+    const char* ptr = strchr(palabra, ' ');
     if (ptr)
         return string(palabra).substr(0, ptr-palabra);
     else

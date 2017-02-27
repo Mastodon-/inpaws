@@ -29,9 +29,9 @@
 #include <cstdlib>
 #include <cstring>
 
-#define INPAWS_VERSION "1.0.1"
-#define INPAWS_BUILD "150107"
-#define INPAWS_COPYRIGHT "Copyright (c) 2009-2015 Francisco Javier Lopez"
+#define INPAWS_VERSION "1.0.2"
+#define INPAWS_BUILD "170227"
+#define INPAWS_COPYRIGHT "Copyright (c) 2009-2016 Francisco Javier Lopez"
 
 using namespace std;
 using namespace Inpaws;
