@@ -245,9 +245,10 @@ PrepProcesos::_leerVerboNombre (PrepEntradaMultiple& entrada, PrepTokeniser& tok
     {
         token = tokeniser.leeToken();
         if (token == PrepTokeniser::TK_IDENTIFICADOR ||
-            token == PrepTokeniser::TK_NUMEROGRANDE || token == PrepTokeniser::TK_NUMERO || token == PrepTokeniser::TK_NUMEROVOCABULARIO
-            || (token == PrepTokeniser::TK_CONTROL &&
-                   (tokeniser.lvalue().literal == "_" || tokeniser.lvalue().literal == "*")))
+            token == PrepTokeniser::TK_NUMEROGRANDE || token == PrepTokeniser::TK_NUMERO ||
+            token == PrepTokeniser::TK_NUMEROVOCABULARIO || token == PrepTokeniser::TK_ID_LETRANUMERO_VOCABULARIO ||
+            (token == PrepTokeniser::TK_CONTROL &&
+             (tokeniser.lvalue().literal == "_" || tokeniser.lvalue().literal == "*")))
         {
             verbo = tokeniser.lvalue().literal;
             lineaVerbo = tokeniser.lineaActual();
@@ -256,9 +257,10 @@ PrepProcesos::_leerVerboNombre (PrepEntradaMultiple& entrada, PrepTokeniser& tok
 
         token = tokeniser.leeToken();
         if (token == PrepTokeniser::TK_IDENTIFICADOR ||
-            token == PrepTokeniser::TK_NUMEROGRANDE || token == PrepTokeniser::TK_NUMERO || token == PrepTokeniser::TK_NUMEROVOCABULARIO
-            || (token == PrepTokeniser::TK_CONTROL &&
-                   (tokeniser.lvalue().literal == "_" || tokeniser.lvalue().literal == "*")))
+            token == PrepTokeniser::TK_NUMEROGRANDE || token == PrepTokeniser::TK_NUMERO ||
+            token == PrepTokeniser::TK_NUMEROVOCABULARIO || token == PrepTokeniser::TK_ID_LETRANUMERO_VOCABULARIO ||
+            (token == PrepTokeniser::TK_CONTROL &&
+             (tokeniser.lvalue().literal == "_" || tokeniser.lvalue().literal == "*")))
         {
             nombre = tokeniser.lvalue().literal;
             lineaNombre = tokeniser.lineaActual();

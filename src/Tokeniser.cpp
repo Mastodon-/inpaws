@@ -81,12 +81,18 @@ Tokeniser::leeToken()
         } while (!_is->eof() && (c >= '0' && c <= '9'));
 
         if (!_is->eof() && (
-            (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')
-            /*|| _lvalue.literal.size() > 5*/))
+            (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')))
         {
+            do
+            {
+                _lvalue.literal.append(1, c);
+                _is->get(c);
+            } while (!_is->eof() && ((c >= '0' && c <= '9') ||
+                                     (c >= 'a' && c <= 'z') ||
+                                     (c >= 'A' && c <= 'Z') ||
+                                     c == '_' || c == 'Ñ' || c == 'ñ'));
             _is->putback(c);
-            // No se permite letras tras los números
-            _lastToken = TK_ERROR;
+            _lastToken = TK_ID_LETRANUMERO_VOCABULARIO;
         } else
         {
             unsigned long val = strtoul(_lvalue.literal.c_str(), NULL, 10);
